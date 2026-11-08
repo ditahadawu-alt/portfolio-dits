@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ditahada Wulandari | Creative Portfolio 2026</title>
+<meta name="description" content="Portfolio of Ditahada Wulandari, Communication Studies student at Gunadarma University. Digital marketing, content creation, video production, and event coordination.">
+<meta property="og:title" content="Ditahada Wulandari | Creative Portfolio 2026">
+<meta property="og:description" content="Communication Studies student passionate about digital marketing, content creation, and creative storytelling.">
+<meta property="og:image" content="img/hero2.webp">
+<meta name="theme-color" content="#ff7bff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#ff7bff;
+  --pink-2:#ffb3ff;
+  --pink-3:#ffe0ff;
+  --ink:#3a2a7a;
+  --ink-2:#5a4a9a;
+  --white:#fff;
+  --card:rgba(255,255,255,.72);
+  --radius:26px;
+  --shadow:0 18px 50px rgba(150,40,190,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+html{overflow-x:clip;background:#fbd9ff}
+body{
+  font-family:'Poppins',system-ui,sans-serif;color:var(--ink);
+  background:#fbd9ff;
+  line-height:1.65;overflow-x:clip;position:relative;
+}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 50% 0%,#ff80ff 0%,#ffb3ff 38%,#fde4ff 75%,#fff4ff 100%)}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+
+/* outlined headings, like the Canva deck */
+.outline{
+  font-weight:900;text-transform:uppercase;letter-spacing:-.01em;line-height:1;
+  color:var(--pink);-webkit-text-stroke:.16em #fff;paint-order:stroke fill;
+  text-shadow:0 8px 24px rgba(180,50,200,.25);
+}
+.outline.thin{color:#fff;-webkit-text-stroke:2px #e347e3;paint-order:normal;font-weight:800;text-shadow:none}
+h2.outline{font-size:clamp(2.2rem,6vw,4.4rem)}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;padding:12px 0;transition:.3s}
+nav.scrolled{background:rgba(255,255,255,.75);backdrop-filter:blur(14px);box-shadow:0 6px 24px rgba(150,40,190,.12)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:900;font-size:1.15rem;text-decoration:none;color:var(--ink)}
+.logo span{color:#e347e3}
+.links{display:flex;gap:6px;list-style:none}
+.links a{display:block;padding:8px 14px;border-radius:99px;text-decoration:none;font-size:.88rem;font-weight:600;transition:.2s}
+.links a:hover{background:#fff;box-shadow:0 4px 14px rgba(180,50,200,.2)}
+.burger{display:none;background:#fff;border:0;border-radius:12px;width:44px;height:44px;font-size:1.3rem;cursor:pointer;color:var(--ink)}
+
+/* hero */
+.hero{min-height:100svh;display:grid;align-items:center;padding:110px 0 60px;position:relative;overflow:clip}
+.blob{position:absolute;border-radius:50%;filter:blur(50px);opacity:.55;z-index:-1;animation:float 9s ease-in-out infinite}
+.b1{width:340px;height:340px;background:#ff5cff;top:12%;left:-80px}
+.b2{width:300px;height:300px;background:#c9a0ff;bottom:8%;right:-60px;animation-delay:-4s}
+@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(24px,-34px)}}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.hello{font-size:1.4rem;font-weight:500}
+.name{font-size:clamp(3rem,9vw,6.8rem);margin:6px 0 22px}
+.bio{max-width:540px;font-size:1.04rem;text-align:left}
+.bio p+p{margin-top:14px}
+.hero-photo{position:relative;justify-self:center;width:min(400px,80%)}
+.hero-photo::before{content:"";position:absolute;inset:8% 4% 0;border-radius:50% 50% 30px 30px;background:linear-gradient(180deg,#fff7,#fff0);z-index:-1}
+.hero-photo img{filter:drop-shadow(0 22px 28px rgba(110,30,150,.35));animation:bob 6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.script{font-family:'Dancing Script',cursive;font-size:2rem;color:#e347e3;margin-top:8px;display:block}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:99px;font-weight:700;font-size:.95rem;text-decoration:none;border:0;cursor:pointer;transition:.25s}
+.btn.primary{background:var(--ink);color:#fff;box-shadow:0 10px 26px rgba(58,42,122,.35)}
+.btn.ghost{background:#fff;color:var(--ink);box-shadow:0 6px 18px rgba(180,50,200,.2)}
+.btn:hover{transform:translateY(-3px) rotate(-1deg)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-10px}
+.stat{background:var(--card);backdrop-filter:blur(8px);border-radius:var(--radius);padding:22px 16px;text-align:center;box-shadow:var(--shadow)}
+.stat b{display:block;font-size:2rem;font-weight:900;color:#d62fd6;line-height:1.1}
+.stat span{font-size:.85rem;font-weight:500}
+
+section{padding:90px 0}
+.sec-head{text-align:center;margin-bottom:46px}
+.sec-head p{margin-top:14px;color:var(--ink-2)}
+.sub{font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;color:#c92bc9;margin-bottom:6px;display:block}
+
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:#fff;border-radius:14px;padding:9px 16px;font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.02em;box-shadow:0 6px 16px rgba(180,50,200,.16);transition:.25s}
+.chip:hover{transform:translateY(-4px) scale(1.04)}
+.tools{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+.tool{width:66px;height:66px;border-radius:18px;display:grid;place-items:center;font-weight:800;font-size:1.3rem;box-shadow:0 8px 18px rgba(0,0,0,.18);transition:.25s}
+.tool:hover{transform:translateY(-6px) rotate(-4deg)}
+.t-pr{background:#00005b;color:#9999ff}.t-ps{background:#001e36;color:#31a8ff}
+.t-off{background:#fff;color:#d83b01}.t-canva{background:linear-gradient(135deg,#00c4cc,#7d2ae8);color:#fff;font-family:'Dancing Script',cursive;font-size:1.5rem}
+.t-cap{background:#fff;color:#000}.t-gs{background:#fff;color:#0f9d58}
+.tool small{display:block;font-size:.55rem;font-weight:600;margin-top:-4px;text-align:center}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.panel{background:var(--card);backdrop-filter:blur(10px);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.panel h3{font-size:1.5rem;font-weight:900;margin-bottom:16px}
+
+/* timeline */
+.timeline{list-style:none;position:relative;padding-left:30px;border-left:4px solid var(--ink);margin-left:6px}
+.timeline li{position:relative;padding:0 0 22px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-39px;top:6px;width:16px;height:16px;border-radius:5px;background:#fff;border:4px solid var(--ink)}
+.timeline b{display:block;text-transform:uppercase;font-weight:800;font-size:.95rem;line-height:1.3}
+.timeline em{font-style:normal;font-size:.9rem;color:var(--ink-2)}
+.edu strong{display:block;font-size:1.05rem;text-transform:uppercase;font-weight:800;line-height:1.3}
+.edu span{color:var(--ink-2)}
+.edu .gpa{color:#fff}
+.gpa{display:inline-block;margin-top:12px;background:var(--ink);color:#fff;border-radius:99px;padding:6px 18px;font-weight:800}
+
+/* experience blocks */
+.exp{display:grid;grid-template-columns:1fr 1.15fr;gap:36px;align-items:center;margin-bottom:60px}
+.exp.flip{grid-template-columns:1.15fr 1fr}
+.exp.flip .exp-text{order:2}
+.exp-text h3{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:900;line-height:1.1;color:var(--pink);-webkit-text-stroke:.14em #fff;paint-order:stroke fill;text-transform:none;margin:6px 0 4px}
+.date{font-weight:700;color:#c92bc9;margin-bottom:12px;display:block}
+.exp-text p{margin-bottom:12px}
+.exp-text h4{font-weight:800;margin:14px 0 6px}
+.exp-text ul{padding-left:20px}
+.exp-text li{margin-bottom:5px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tag{background:#fff;border-radius:99px;padding:5px 14px;font-size:.78rem;font-weight:700;box-shadow:0 4px 12px rgba(180,50,200,.14)}
+
+/* photo collage */
+.collage{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.collage figure{overflow:hidden;border-radius:18px;background:#fff;padding:6px;box-shadow:var(--shadow);cursor:zoom-in;transition:.3s}
+.collage figure:nth-child(odd){transform:rotate(-1.6deg)}
+.collage figure:nth-child(even){transform:rotate(1.4deg)}
+.collage figure:hover{transform:rotate(0) scale(1.04);z-index:2}
+.collage img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;border-radius:13px}
+.collage.wide img{aspect-ratio:4/3}
+
+/* phones */
+.phones{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
+.phone{display:block;border-radius:34px;background:#14121c;padding:8px;box-shadow:0 18px 34px rgba(60,20,90,.35);text-decoration:none;transition:.3s;position:relative}
+.phone img{border-radius:27px;width:100%;aspect-ratio:9/16;object-fit:cover}
+.phone:hover{transform:translateY(-10px) rotate(-2deg)}
+.phone .go{position:absolute;right:14px;bottom:14px;background:#fff;border-radius:99px;font-size:.72rem;font-weight:800;padding:4px 12px;color:var(--ink)}
+.phone.bare{background:none;padding:0;box-shadow:none}
+.phone.bare img{border-radius:0;aspect-ratio:auto;object-fit:contain;filter:drop-shadow(0 14px 18px rgba(60,40,0,.3))}
+.note{text-align:center;margin-top:20px;font-weight:700}
+.note .outline{font-size:1.1rem;-webkit-text-stroke:.2em #fff}
+
+.feature{background:linear-gradient(135deg,#ecf4c8,#fff);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);margin-top:50px}
+.feature h4{font-size:1.2rem;font-weight:900}
+
+/* projects */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.card{background:var(--card);backdrop-filter:blur(10px);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.card-img{aspect-ratio:16/10;overflow:hidden;background:#f6c8ff;position:relative}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.card:hover .card-img img{transform:scale(1.06)}
+.card-img.top img{object-position:top}
+.card-body{padding:24px 26px 28px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.35rem;font-weight:900;line-height:1.2}
+.card .meta{font-size:.9rem}
+.card .meta b{color:#c92bc9}
+.badge{display:inline-block;background:#fff4b8;color:#7a5a00;border-radius:99px;padding:4px 14px;font-weight:800;font-size:.8rem;width:fit-content}
+.card .btn{margin-top:auto;width:fit-content;padding:10px 20px;font-size:.88rem}
+.video-card{grid-column:1/-1;flex-direction:row;align-items:center;background:linear-gradient(135deg,#ff9bff,#ffd0ff)}
+.video-card .card-img{flex:0 0 38%;aspect-ratio:auto;align-self:stretch;background:#fbe3ff}
+.video-card .card-img img{object-fit:contain;padding:10px}
+
+/* certs */
+.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.certs figure{background:#fff;border-radius:18px;padding:8px;box-shadow:var(--shadow);cursor:zoom-in;transition:.3s}
+.certs figure:hover{transform:translateY(-6px) rotate(-1deg)}
+.certs img{border-radius:12px;width:100%}
+.certs figcaption{font-size:.8rem;font-weight:600;text-align:center;padding:10px 6px 4px}
+
+/* contact */
+.contact{text-align:center;padding:110px 0 70px}
+.contact h2{font-size:clamp(3rem,10vw,7.4rem);margin-bottom:30px}
+.contact-links{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.contact-links a{display:inline-flex;gap:10px;align-items:center;background:#fff;border-radius:99px;padding:14px 26px;text-decoration:none;font-weight:700;box-shadow:var(--shadow);transition:.25s}
+.contact-links a:hover{transform:translateY(-5px)}
+footer{text-align:center;padding:24px 0 40px;font-size:.85rem;color:var(--ink-2)}
+
+/* lightbox */
+#lb{position:fixed;inset:0;background:rgba(40,10,70,.88);display:none;place-items:center;z-index:100;padding:24px;cursor:zoom-out}
+#lb.open{display:grid}
+#lb img{max-height:90vh;max-width:min(1100px,94vw);border-radius:14px;box-shadow:0 20px 70px #0008}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+.marquee-clip{overflow:hidden;padding:6px 0}
+.marquee{overflow:hidden;white-space:nowrap;padding:16px 0;background:var(--ink);color:#fff;transform:rotate(-1.2deg);margin:30px -10px;font-weight:800;text-transform:uppercase;letter-spacing:.12em}
+.marquee div{display:inline-block;animation:slide 26s linear infinite}
+.marquee span{margin:0 26px}.marquee span::after{content:" ✦";color:var(--pink)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+@media(max-width:900px){
+  .hero-grid,.two,.exp,.exp.flip,.cards{grid-template-columns:1fr}
+  .exp.flip .exp-text{order:0}
+  .hero-photo{order:-1;width:min(210px,56%)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .phones{grid-template-columns:repeat(2,1fr)}
+  .certs{grid-template-columns:repeat(2,1fr)}
+  .video-card{flex-direction:column}
+  .video-card .card-img{flex:none;aspect-ratio:16/10}
+  .burger{display:block}
+  .links{position:absolute;top:64px;right:20px;left:20px;flex-direction:column;background:#fff;border-radius:20px;padding:10px;box-shadow:var(--shadow);display:none}
+  .links.open{display:flex}
+  section{padding:64px 0}
+}
+@media(max-width:520px){.certs{grid-template-columns:1fr}.collage{grid-template-columns:repeat(2,1fr)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#home">ditahada<span>.</span></a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <ul class="links" id="links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#volunteer">Volunteer</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certs">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <p class="hello">Hi! my name is</p>
+      <h1 class="outline name">Ditahada<br>Wulandari</h1>
+      <div class="bio">
+        <p>I'm a Communication Studies student passionate about digital marketing, content creation, and creative storytelling. Experienced in social media management, video production, and event coordination.</p>
+        <p>A self-motivated, fast learner with a proactive attitude, strong communication skills, and a drive to grow through creativity and collaboration.</p>
+      </div>
+      <span class="script">Creative Portfolio 2026</span>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my work ↓</a>
+        <a class="btn ghost" href="#contact">Let's work together</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <img src="img/profile.webp" alt="Ditahada Wulandari in a purple Gunadarma jacket" width="600" height="900" fetchpriority="high">
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats reveal">
+    <div class="stat"><b data-count="3.94" data-dec="2">3.94</b><span>GPA, Communication Studies</span></div>
+    <div class="stat"><b data-count="100" data-suffix="+">100+</b><span>students mentored</span></div>
+    <div class="stat"><b data-count="3000" data-suffix="+">3,000+</b><span>likes on PKKMB content</span></div>
+    <div class="stat"><b>8<small style="font-size:1rem"> / 23</small></b><span>teams, Radio Week 2025</span></div>
+  </div>
+</div>
+
+<div class="marquee-clip"><div class="marquee" aria-hidden="true"><div>
+  <span>Video Production</span><span>Content Creation</span><span>Social Media Management</span><span>Event Coordination</span><span>Communication</span>
+  <span>Video Production</span><span>Content Creation</span><span>Social Media Management</span><span>Event Coordination</span><span>Communication</span>
+</div></div></div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sub">Get to know me</span><h2 class="outline">About</h2></div>
+    <div class="two">
+      <div class="panel reveal">
+        <h3>Skills</h3>
+        <div class="chips">
+          <span class="chip">Video Production</span><span class="chip">Event Coordination</span>
+          <span class="chip">Content Creation</span><span class="chip">Communication</span>
+          <span class="chip">Social Media Management</span>
+        </div>
+        <h3 style="margin-top:28px">Tools</h3>
+        <div class="tools">
+          <div class="tool t-pr" title="Adobe Premiere Pro">Pr</div>
+          <div class="tool t-ps" title="Adobe Photoshop">Ps</div>
+          <div class="tool t-off" title="Microsoft Office">Of</div>
+          <div class="tool t-canva" title="Canva">Canva</div>
+          <div class="tool t-cap" title="CapCut">✂</div>
+          <div class="tool t-gs" title="Google Sheets">▦</div>
+        </div>
+      </div>
+      <div class="panel reveal">
+        <h3>Education</h3>
+        <div class="edu">
+          <strong>Gunadarma University</strong>
+          <span>2024 – Present</span><br>
+          <span>Communication Studies</span><br>
+          <span class="gpa">GPA 3.94</span>
+        </div>
+        <h3 style="margin-top:28px">Experience</h3>
+        <ul class="timeline">
+          <li><b>Google Developer Group on Campus Gunadarma</b><em>Growth Marketing Associate · Oct 2026 – Present</em></li>
+          <li><b>Computer Laboratory FIKOM Gunadarma</b><em>Student Mentor · Aug 2026 – Present</em></li>
+          <li><b>Gunadarma Esports</b><em>Staff MLBB Division · Sep 2025 – Present</em></li>
+          <li><b>PKKMB FIKOM Gunadarma</b><em>Volunteer Design, Publications, Media · Aug 2026</em></li>
+          <li><b>Bina Desa FIKOM Gunadarma</b><em>Volunteer Design, Publications, Media · Aug 2025</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sub">Where I've worked</span><h2 class="outline">Work<br><span class="thin outline" style="font-size:.7em">Experience</span></h2></div>
+
+    <article class="exp reveal">
+      <div class="exp-text">
+        <span class="sub">Work Experience</span>
+        <h3>Computer Laboratory FIKOM<br>Universitas Gunadarma</h3>
+        <span class="date">Student Mentor · Aug 2026 – Present</span>
+        <p>Mentored 100+ university students in Adobe Premiere Pro and Adobe Photoshop, providing hands-on training and technical guidance.</p>
+        <h4>Key Responsibilities</h4>
+        <ul>
+          <li>Taught video editing and graphic design using Adobe Premiere Pro and Adobe Photoshop.</li>
+          <li>Provided one-on-one mentoring to support students' learning.</li>
+          <li>Guided students through practical assignments and software exercises.</li>
+          <li>Conducted and evaluated practical examinations to assess students' skills.</li>
+        </ul>
+      </div>
+      <div class="collage" data-lightbox>
+        <figure><img src="img/mentor1.webp" alt="Mentoring session in the computer lab" loading="lazy"></figure>
+        <figure><img src="img/mentor2.webp" alt="Students practicing in the lab" loading="lazy"></figure>
+        <figure><img src="img/mentor3.webp" alt="Group photo with students" loading="lazy"></figure>
+        <figure><img src="img/mentor4.webp" alt="Class group photo" loading="lazy"></figure>
+        <figure><img src="img/mentor5.webp" alt="Practicum class" loading="lazy"></figure>
+      </div>
+    </article>
+
+    <article class="exp flip reveal" id="org">
+      <div class="exp-text">
+        <span class="sub">Organizational Experience</span>
+        <h3>Gunadarma Esports</h3>
+        <span class="date">Mobile Legends Division Staff · Sep 2025 – Present</span>
+        <p>Contributed to team operations, player recruitment, scheduling, and tournament coordination within the Mobile Legends division.</p>
+        <h4>Key Responsibilities</h4>
+        <ul>
+          <li>Coordinated Team 2 operations and communication.</li>
+          <li>Assisted in recruiting players for the university's competitive team.</li>
+          <li>Managed training and tournament schedules.</li>
+          <li>Supported esports events and tournament activities.</li>
+        </ul>
+      </div>
+      <div class="collage" data-lightbox>
+        <figure><img src="img/esports1.webp" alt="Gunadarma Esports team in purple jackets" loading="lazy"></figure>
+        <figure><img src="img/esports2.webp" alt="Esports team group photo" loading="lazy"></figure>
+        <figure><img src="img/esports3.webp" alt="Gunadarma Esports booth" loading="lazy"></figure>
+        <figure><img src="img/esports4.webp" alt="Esports community gathering" loading="lazy"></figure>
+        <figure><img src="img/esports5.webp" alt="Team meeting" loading="lazy"></figure>
+        <figure><img src="img/esports6.webp" alt="Team sitting together on campus" loading="lazy"></figure>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="volunteer">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sub">Giving back</span><h2 class="outline">Volunteers<br><span class="thin outline" style="font-size:.7em">Experience</span></h2></div>
+
+    <article class="exp reveal">
+      <div class="exp-text">
+        <span class="sub">23 September 2026</span>
+        <h3>Design, Publication, and Branding</h3>
+        <span class="date">PKKMB FIKOM Universitas Gunadarma</span>
+        <p>Designed and published branding and informational content for the faculty's new-student orientation. The posts gained up to <b>3,000+ likes</b> in total.</p>
+      </div>
+      <div class="collage wide" data-lightbox>
+        <figure><img src="img/pkkmb1.webp" alt="PKKMB hall with new students" loading="lazy"></figure>
+        <figure><img src="img/pkkmb2.webp" alt="PKKMB participants" loading="lazy"></figure>
+        <figure><img src="img/pkkmb3.webp" alt="Orientation crowd" loading="lazy"></figure>
+        <figure><img src="img/pkkmb4.webp" alt="Students smiling at PKKMB" loading="lazy"></figure>
+        <figure><img src="img/pkkmb5.webp" alt="Martial arts performance at PKKMB" loading="lazy"></figure>
+        <figure><img src="img/pkkmb6.webp" alt="PKKMB audience" loading="lazy"></figure>
+      </div>
+    </article>
+
+    <div class="reveal">
+      <div class="phones">
+        <a class="phone" href="https://www.instagram.com/reel/DddnOAgBlhc/" target="_blank" rel="noopener"><img src="img/poster1.webp" alt="Do's and Don'ts PKKMB story" loading="lazy"><span class="go">Open ↗</span></a>
+        <a class="phone" href="https://www.instagram.com/p/DdgUnbVzPYZ/" target="_blank" rel="noopener"><img src="img/poster2.webp" alt="H-3 Road to PKKMB FIKOM UG 2026" loading="lazy"><span class="go">Open ↗</span></a>
+        <a class="phone" href="https://www.instagram.com/p/DdvxoArTRcL/" target="_blank" rel="noopener"><img src="img/poster3.webp" alt="The Day PKKMB 2026" loading="lazy"><span class="go">Open ↗</span></a>
+        <a class="phone" href="https://www.instagram.com/p/Dd0FOT3TOuS/" target="_blank" rel="noopener"><img src="img/poster4.webp" alt="The Day PKKMB 2026, second post" loading="lazy"><span class="go">Open ↗</span></a>
+      </div>
+      <p class="note">Tap a phone to see the post on Instagram · gained up to 3,000+ likes in total for branding &amp; informational content</p>
+    </div>
+
+    <div class="feature reveal" style="margin-top:70px">
+      <span class="sub" style="color:#6b7a1a">26 – 31 August 2025</span>
+      <h4>Design, Publication, and Branding · Bina Desa FIKOM Universitas Gunadarma</h4>
+      <p style="margin-top:8px"><b>Featured project: Official Event Logo &amp; Certificate.</b> Designed and developed the official logo for Bina Desa FIKOM 2025, representing the program's values of community service, growth, collaboration, and social impact.</p>
+      <div class="phones" data-lightbox style="grid-template-columns:repeat(4,1fr)">
+        <div class="phone bare"><img src="img/bina1.webp" alt="Bina Desa 2025 story" loading="lazy"></div>
+        <div class="phone bare"><img src="img/bina2.webp" alt="Bina Desa 2025 story" loading="lazy"></div>
+        <div class="phone bare"><img src="img/bina3.webp" alt="Open donation story for Bina Desa 2025" loading="lazy"></div>
+        <div class="phone bare"><img src="img/bina4.webp" alt="Bina Desa 2025 live story" loading="lazy"></div>
+      </div>
+    </div>
+
+    <article class="exp flip reveal" style="margin-top:70px">
+      <div class="exp-text">
+        <span class="sub">24 September 2025</span>
+        <h3>Person in Charge (PJ) of a Group</h3>
+        <span class="date">PKKMB FIKOM Universitas Gunadarma · Welcoming MABA 2025</span>
+        <p><i>Creating a supportive and engaging orientation experience.</i></p>
+        <h4>Key Responsibilities</h4>
+        <ul>
+          <li>Guided and mentored a group of new students during orientation activities.</li>
+          <li>Assisted students in adapting to the academic and campus environment.</li>
+          <li>Served as the main point of contact between participants and the organizing committee.</li>
+        </ul>
+        <h4>Skills Developed</h4>
+        <div class="tags"><span class="tag">Leadership</span><span class="tag">Mentoring</span><span class="tag">Communication</span><span class="tag">Problem Solving</span><span class="tag">Public Speaking</span><span class="tag">Teamwork</span></div>
+      </div>
+      <div class="collage" data-lightbox>
+        <figure><img src="img/maba1.webp" alt="Selfie with the orientation group" loading="lazy"></figure>
+        <figure><img src="img/maba2.webp" alt="Orientation hall" loading="lazy"></figure>
+        <figure><img src="img/maba3.webp" alt="Group posing at orientation" loading="lazy"></figure>
+        <figure><img src="img/maba4.webp" alt="Students in the group" loading="lazy"></figure>
+        <figure><img src="img/maba5.webp" alt="New students smiling" loading="lazy"></figure>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sub">Things I've made</span><h2 class="outline">Project<br><span class="thin outline" style="font-size:.7em">Experience</span></h2></div>
+    <div class="cards">
+
+      <article class="card reveal">
+        <div class="card-img top"><img src="img/beauty.webp" alt="Short-form beauty content frame" loading="lazy"></div>
+        <div class="card-body">
+          <h3>Short-Form Beauty Content Editing</h3>
+          <p>Produced and edited short-form beauty content for a personal creator using CapCut. Focused on creating engaging TikTok-style videos through effective pacing, captions, transitions, and visual storytelling to enhance audience engagement.</p>
+          <a class="btn primary" href="https://drive.google.com/file/d/1GG8MPOrc0hE5oXZQyOekzzR0zqiE4Cf1/view" target="_blank" rel="noopener">Watch video ↗</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-img"><img src="img/scratch.webp" alt="Scratch game project on a laptop" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">🏆 Best Game in Class</span>
+          <h3>Best Game Project · Scratch</h3>
+          <p>Developed an interactive game project using Scratch as part of an academic practicum. The project combined creativity, logical thinking, and visual design, resulting in recognition as the Best Game Project in class.</p>
+          <p class="meta"><b>My roles:</b> Programmer &amp; Visual Designer</p>
+          <p class="meta"><b>Skills:</b> Creative Thinking, Game Design, Problem Solving, Visual Design, Teamwork, Programming Fundamentals</p>
+          <a class="btn primary" href="https://www.instagram.com/reel/DC8xsA8Txxd/" target="_blank" rel="noopener">See the game ↗</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-img top"><img src="img/podcast.webp" alt="DZA UG Radio podcast cover" loading="lazy"></div>
+        <div class="card-body">
+          <span class="badge">🏆 8th out of 23 teams</span>
+          <h3>"DZA" Misteri Podcast · Radio Week 2025</h3>
+          <p>Participated in Radio Week 2025 hosted by Universitas Muhammadiyah Jakarta, contributing to the development and production of a podcast project from concept creation to final execution.</p>
+          <p class="meta"><b>My roles:</b> Host, Script Writer, Producer, Audio Operator</p>
+          <p class="meta"><b>Skills:</b> Public Speaking, Audio Production, Storytelling, Script Writing, Team Collaboration, Communication</p>
+          <a class="btn primary" href="https://drive.google.com/file/d/1iZ1YNZsp6j5diabMKV-ZIlT82YSMAe2b/view?usp=drive_link" target="_blank" rel="noopener">Listen ↗</a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-img top"><img src="img/kampus.webp" alt="Kampus Berdampak competition video frame" loading="lazy"></div>
+        <div class="card-body">
+          <h3>Kampus Berdampak: Ilmu untuk Kemanusiaan, Kampus untuk Perubahan</h3>
+          <p>Produced a competition video for National Education Day 2025 under the theme "Kampus Berdampak: Ilmu Untuk Kemanusiaan, Kampus Untuk Perubahan." The project aimed to highlight the positive impact of higher education through meaningful storytelling and visual communication.</p>
+          <p class="meta"><b>My roles:</b> Video Editor, Talent, Creative Team</p>
+          <p class="meta"><b>Skills:</b> Video Editing, Storytelling, Creative Production, Team Collaboration, Content Development, Visual Communication</p>
+        </div>
+      </article>
+
+      <article class="card video-card reveal">
+        <div class="card-img"><img src="img/editing.webp" alt="Video editing previews" loading="lazy"></div>
+        <div class="card-body">
+          <h3>My Video Editing Files Are Here! :D</h3>
+          <p>From my personal dummy projects, campus tasks, and competition edits. Made with CapCut and Adobe Premiere Pro.</p>
+          <a class="btn primary" href="https://drive.google.com/drive/folders/1ZcBsSC8XO7n7495c6W6H75WZZHgGQOii?usp=sharing" target="_blank" rel="noopener">Open the folder ↗</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sub">Proof of the work</span><h2 class="outline">Certification</h2><p>Tap a certificate to zoom in.</p></div>
+    <div class="certs" data-lightbox>
+      <figure class="reveal"><img src="img/cert-radio.webp" alt="Radio Podcast Competition Radioweek 2025 certificate" loading="lazy"><figcaption>Radio Podcast Competition · Radioweek 2025</figcaption></figure>
+      <figure class="reveal"><img src="img/cert-fikomcup.webp" alt="FIKOM Cup 2025 volunteer certificate" loading="lazy"><figcaption>Volunteer, Mobile Legend Coordinator · FIKOM Cup 2025</figcaption></figure>
+      <figure class="reveal"><img src="img/cert-binadesa.webp" alt="Bina Desa 2025 certificate of contribution" loading="lazy"><figcaption>Volunteer · Bina Desa 2025</figcaption></figure>
+      <figure class="reveal"><img src="img/cert-esports.webp" alt="Gunadarma Esports appreciation certificate" loading="lazy"><figcaption>Committee Member · Gunadarma Esports</figcaption></figure>
+      <figure class="reveal"><img src="img/cert-pkkmb.webp" alt="PKKMB FIKOM 2026 certificate" loading="lazy"><figcaption>Documentation, Publication &amp; Branding · PKKMB FIKOM 2026</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap reveal">
+    <h2 class="outline">Lets work<br>together</h2>
+    <div class="contact-links">
+      <a href="mailto:ditahadawu@gmail.com">✉ ditahadawu@gmail.com</a>
+      <a href="https://instagram.com/dithadaaw" target="_blank" rel="noopener">◎ instagram.com/dithadaaw</a>
+      <a href="https://www.linkedin.com/search/results/people/?keywords=Ditahada%20Wulandari" target="_blank" rel="noopener">in Ditahada Wulandari</a>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="yr">2026</span> Ditahada Wulandari · Creative Portfolio</footer>
+
+<div id="lb" role="dialog" aria-label="Image preview"><img alt=""></div>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  function onScroll(){nav.classList.toggle('scrolled',window.scrollY>30)}
+  onScroll();addEventListener('scroll',onScroll,{passive:true});
+
+  var burger=document.getElementById('burger'),links=document.getElementById('links');
+  burger.addEventListener('click',function(){links.classList.toggle('open')});
+  links.addEventListener('click',function(e){if(e.target.tagName==='A')links.classList.remove('open')});
+
+  // reveal on scroll
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+    })},{threshold:.12});
+    els.forEach(function(el,i){el.style.transitionDelay=(i%4)*60+'ms';io.observe(el)});
+  } else els.forEach(function(el){el.classList.add('in')});
+
+  // count-up stats
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var target=parseFloat(el.dataset.count),dec=parseInt(el.dataset.dec||0,10),suf=el.dataset.suffix||'';
+    var started=false;
+    new IntersectionObserver(function(es,ob){es.forEach(function(e){
+      if(!e.isIntersecting||started)return;started=true;ob.disconnect();
+      var t0=performance.now(),dur=1400;
+      (function tick(t){
+        var p=Math.min((t-t0)/dur,1),v=target*(1-Math.pow(1-p,3));
+        el.textContent=(dec?v.toFixed(dec):Math.round(v).toLocaleString('en-US'))+suf;
+        if(p<1)requestAnimationFrame(tick);
+      })(t0);
+    })},{threshold:.6}).observe(el);
+  });
+
+  // lightbox
+  var lb=document.getElementById('lb'),lbImg=lb.querySelector('img');
+  document.querySelectorAll('[data-lightbox]').forEach(function(g){
+    g.addEventListener('click',function(e){
+      var img=e.target.closest('img');if(!img)return;
+      lbImg.src=img.src;lbImg.alt=img.alt;lb.classList.add('open');
+    });
+  });
+  lb.addEventListener('click',function(){lb.classList.remove('open')});
+  addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('open')});
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
